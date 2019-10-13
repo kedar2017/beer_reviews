@@ -8,7 +8,16 @@
 
 
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image
+} from 'react-native';
+
+import {
+  AppRoot
+} from './router';
 
 export default class App extends React.Component {
   render() {
@@ -16,10 +25,7 @@ export default class App extends React.Component {
       uri: 'https://d1c8v1qci5en44.cloudfront.net/site/beer_logos/beer-881386_1a85e_sm.jpeg'
     };
     return (
-      <View style={styles.container}>
-      <Text>Beer</Text>
-      <Image source={pic} style={{width: 193, height: 110}}/>
-      </View>
+      <AppRoot />
     );
   }
 }
