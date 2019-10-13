@@ -1,21 +1,22 @@
 import React from 'react';
 import {
-  TabNavigator
+  TabNavigator,
+  StackNavigator
 } from 'react-navigation';
 import {
   Icon
 } from 'react-native-elements';
 
-import Beers from './screens/beers';
-import Search from './screens/search';
-import Settings from './screens/settings';
+import Beers from './components/beers';
+import Search from './components/search';
+import Settings from './components/settings';
 
 export const AppRoot = TabNavigator({
   Beers: {
-    screen: Beers,
+    screen: beersScreen,
     navigationOptions: {
       tabBarLabel: 'Beers',
-      tabBarIcon: ({tintColor}) => <Icon name="movie" size={30} color={tintColor}/>,
+      tabBarIcon: ({tintColor}) => <Icon name="beers" size={30} color={tintColor}/>,
     },
   },
   Search: {
