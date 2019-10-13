@@ -36,15 +36,16 @@ export default class BeerDetails extends Component {
             );
           }
 
-        const numbers = [1, 2, 3, 4, 5];
-
-        const beerList = numbers.map((beer) => {
-            <Text>beer</Text>
-        })
 
         return (
             <View>
                 {/* {{movieList}} */}
+                <ScrollView horizontal>
+                  <Text style={{fontSize:96}}>Scroll me plz</Text>
+                  <Text style={{fontSize:96}}>Scroll me plz</Text>
+                  <Text style={{fontSize:96}}>Scroll me plz</Text>
+                  <Text style={{fontSize:96}}>Scroll me plz</Text>
+                </ScrollView>
             </View>
         );
     }
